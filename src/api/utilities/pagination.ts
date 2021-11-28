@@ -1,4 +1,4 @@
-const pagination = (pageNumber: string , pageSize: string) => {
+const pagination = (pageNumber, pageSize) => {
     const offset = (Number(pageNumber) - 1) * Number(pageSize);
     const limit = Number(pageSize);
 

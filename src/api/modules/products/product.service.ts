@@ -1,12 +1,7 @@
 import pagination from "../../utilities/pagination";
 import Product from './product.model';
 
-interface getProductsProps {
-    pageNumber: string,
-    pageSize: string,
-}
-
-const getProducts = ( { pageNumber, pageSize }: getProductsProps) => {
+const getProducts = (pageNumber, pageSize ) => {
     const { offset, limit } = pagination(pageNumber, pageSize);
 
     const Products = Product.find().skip(offset).limit(limit);
