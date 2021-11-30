@@ -1,13 +1,12 @@
-import pagination from "../../utilities/pagination";
+import pagination from '../../utilities/pagination';
 import Product from './product.model';
 
-const getProducts = (pageNumber, pageSize ) => {
-    const { offset, limit } = pagination(pageNumber, pageSize);
+const getProducts = (pageNumber, pageSize) => {
+  const { offset, limit } = pagination(pageNumber, pageSize);
 
-    const Products = Product.find().skip(offset).limit(limit);
+  const Products = Product.find().skip(offset).limit(limit);
 
-    return Products;
-}
+  return Products;
+};
 
-
-export default { getProducts }
+export default { getProducts };

@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 import express, { Application } from 'express';
 dotenv.config();
 
-import routers from './routers'
+import routers from './routers';
 
 const app: Application = express();
 
