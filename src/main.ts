@@ -6,6 +6,4 @@ const bootstrap = async () => {
   await app.listen(process.env.PORT);
 };
 
-bootstrap().then(() => {
-  console.log(`Server start to ${process.env.PORT} port`);
-});
+bootstrap();
