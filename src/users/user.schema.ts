@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { genSalt, compare, hash } from 'bcrypt';
+import { genSalt, hash } from 'bcrypt';
 
 export type UserDocument = User & Document;
 
