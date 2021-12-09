@@ -12,4 +12,9 @@ export class UserRepository {
     const newUser = new this.userModel(user);
     return newUser.save();
   }
+
+  async getUser(id): Promise<User> {
+    const user = this.userModel.findOne({ _id: id });
+    return user;
+  }
 }
