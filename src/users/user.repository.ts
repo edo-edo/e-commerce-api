@@ -13,8 +13,8 @@ export class UserRepository {
     return newUser.save();
   }
 
-  async getUser(id): Promise<User> {
-    const user = this.userModel.findOne({ _id: id });
+  async findUser(email): Promise<User> {
+    const user = this.userModel.findOne({ email });
     return user;
   }
 }

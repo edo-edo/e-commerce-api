@@ -11,4 +11,8 @@ export class UserService {
     //To Do
     return this.userRepository.createUser(user);
   }
+
+  async findUser(email: string) {
+    return this.userRepository.findUser(email);
+  }
 }
